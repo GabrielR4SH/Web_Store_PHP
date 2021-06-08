@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>loja tyrash|Login/registrar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuItens">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="produtos.html">PRODUTOS</a></li>
+                    <li><a href="conta.html">LOGIN/REGISTRAR</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+            <a href="carrinho.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div> 
+    </div>
+
+
+    <!-- pagina da conta -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/image1.png" width="100%">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-contato">
+                        <div class="form-btn">
+                            <span onclick="login()">Contato</span>
+                            <span onclick="register()">Sugestão</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <form action="" id="loginForm">
+                           <div class="con"><h3>Email: Tyrash@gmail.com</h3></div><br>
+                           <div class="con"><h3>Numero Comercial: 50937245</h3></div><br>
+                           <div class="con"><h3>Redes sociais: Tyrash</h3></div><br>
+                        </form>
+
+                        <form action="" id="regForm">
+                            <textarea placeholder="Area de sugestões" cols="30" rows="10"></textarea>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+            <!-- footer -->
+
+             <!-- footer -->
+
+             <div class="footer">
+                <div class="container">
+                    <div class="row-3">
+                        
+                        <div class="footer-col-2">
+                           <img src="img/logo.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                            
+                        <div class="footer-col-3">
+                            <h3>Acesse os links</h3>
+                            <ul>
+                                <li>cupons</li>
+                                <li>postagem do blog</li>
+                                <li>política de devolução</li>
+                                <li>Junte-se a um afiliado</li>  
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Siga-nos</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>Youtube</li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copyright">Copyright tyrash</p>
+                </div>
+            </div>
+
+
+            <!-- js para o menu -->
+
+        <script>
+            var menuItens = document.getElementById("menuItens");
+
+            menuItens.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if( menuItens.style.maxHeight == "0px")
+                {
+                    menuItens.style.maxHeight = "200px";
+                }
+                else
+                {
+                    menuItens.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+
+
+        <!-- js para o form -->
+
+        <script>
+            var loginForm = document.getElementById("loginForm");
+            var regForm = document.getElementById("regForm");
+            var indicator = document.getElementById("indicator");
+
+            function register(){
+                regForm.style.transform = "translateX(0px)";
+                loginForm.style.transform = "translateX(0px)";
+                indicator.style.transform = "translateX(100px)";
+            }
+
+            function login(){
+                regForm.style.transform = "translateX(300px)";
+                loginForm.style.transform = "translateX(300px)";
+                indicator.style.transform = "translateX(0px)";
+            }
+
+        </script>
+        
+
+</body>
+</html>

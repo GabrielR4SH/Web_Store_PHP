@@ -1,0 +1,250 @@
+<php                                 
+
+require_once('../class/conection.php');
+require_once('../config.php');
+
+?></php>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>loja tyrash|Descrição do Produtos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuItens">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="produtos.html">PRODUTOS</a></li>
+                    <li><a href="conta.html">LOGIN/REGISTRAR</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+            <a href="carrinho.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div> 
+    </div>
+
+    <!-- Detalhes dos produtos -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/categoria2.jpg" width="100%" id="productImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="img/categoria3.jpg" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/categoria2.jpg" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/categoria1.png" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/categoria2.jpg" width="100%" class="smallImg">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-2">
+
+
+                <p>tenis modelo 045555</p>
+                <h1>Super Star</h1>
+                <h4>$180.00</h4>
+                <select>
+                    <option>Tamanhos Disponiveis</option>
+                    <option>38</option>
+                    <option>39</option>
+                    <option>42</option>
+                    <option>44</option>
+                    <option>45</option>    
+                </select><br>
+                <input type="number" value="1">
+                <a href="" style="margin-top: 12px;" class="btn">Add to cart</a>
+
+                <h3>Detalhes do produto <span class="glyphicon glyphicon-th-list"></span></h3>
+                <br>
+                <p>Inspirado nos tênis clássicos dos anos 70,
+                 o Tênis Adidas Grand Court Base Masculino é ideal para os homens que buscam dar uma repaginada no visual. Com excelente ventilação interna, 
+                o modelo possui as três listras laterais icônicas da marca e solado emborrachado que garante aderência.</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- titulo -->
+            <div class="small-container">
+                <div class="row row-2">
+                    <h2>produtos relacionados</h2>
+                    <p>Veja mais</p>
+                </div>
+            </div>
+
+
+        <!-- produtos -->
+<div class="small-container">
+
+    <div class="row">
+    <div class="col-4">
+        <img src="img/categoria1.png">
+        <h4>tenis 1</h4>
+        <div class="rating">
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star-empty"></span>
+        
+        </div>
+        <p>$50,00</p>
+    </div>
+    <div class="col-4">
+        <img src="img/categoria2.jpg">
+        <h4>tenis 2</h4>
+        <div class="rating">
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star-empty"></span>
+        <span class="glyphicon glyphicon-star-empty"></span>
+        
+        </div>
+        <p>$50,00</p>
+    </div>
+    <div class="col-4">
+        <img src="img/categoria3.jpg">
+        <h4>tenis 3</h4>
+        <div class="rating">
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star-empty"></span>
+        <span class="glyphicon glyphicon-star-empty"></span>
+        
+        </div>
+        <p>$50,00</p>
+    </div>
+    <div class="col-4">
+        <img src="img/categoria1.png">
+        <h4>tenis 4</h4>
+        <div class="rating">
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-star-empty"></span>
+        </div>
+        <p>$50,00</p>
+    </div>
+  </div>
+</div>
+
+        
+
+            <!-- footer -->
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row-3">
+                        
+                        <div class="footer-col-2">
+                           <img src="img/logo.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                            
+                        <div class="footer-col-3">
+                            <h3>Acesse os links</h3>
+                            <ul>
+                                <li>cupons</li>
+                                <li>postagem do blog</li>
+                                <li>política de devolução</li>
+                                <li>Junte-se a um afiliado</li>  
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Siga-nos</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>Youtube</li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copyright">Copyright tyrash</p>
+                </div>
+            </div>
+
+
+            <!-- js para o menu -->
+
+        <script>
+            var menuItens = document.getElementById("menuItens");
+
+            menuItens.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if( menuItens.style.maxHeight == "0px")
+                {
+                    menuItens.style.maxHeight = "200px";
+                }
+                else
+                {
+                    menuItens.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+
+
+        <!-- js para as img dos produtos -->
+
+        <script>
+            var productImg = document.getElementById("productImg");
+            var smallImg = document.getElementsByClassName("smallImg");
+
+            smallImg[0].onclick = function() 
+            {
+               productImg.src = smallImg[0].src;
+            }
+            smallImg[1].onclick = function() 
+            {
+               productImg.src = smallImg[1].src;
+            }
+            smallImg[2].onclick = function() 
+            {
+               productImg.src = smallImg[2].src;
+            }
+            smallImg[3].onclick = function() 
+            {
+               productImg.src = smallImg[3].src;
+            }
+
+
+
+
+        </script>
+  
+</body>
+</html>

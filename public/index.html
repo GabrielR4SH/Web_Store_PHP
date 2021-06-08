@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+    <title>loja tyrash</title>
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuItens">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="produtos.html">PRODUTOS</a></li>
+                    <li><a href="conta.html">LOGIN/REGISTRAR</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+            <a href="carrinho.html"><img src="img/cart.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>dê ao seu treino<br> um novo estilo</h1>
+                <p>o sucesso nem sempre tem a ver com grandeza. é sobre consistência. <br> o trabalho árduo consistente obtém sucesso. a grandeza virá.</p>
+                <a href="" class="btn">Explore Agora &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="img/image1.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------ Categorias em Destaque  -->
+
+<div class="categories">
+    <div class="small-container">
+        <h2 class="title">Categorias em Destaque</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="img/categoria1.png">
+            </div>
+            <div class="col-3">
+                <img src="img/categoria2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="img/categoria3.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------Produtos em Destaque  -->
+
+<div class="small-container">
+    <h2 class="title">Produtos em Destaque</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="img/categoria1.png">
+            <h4>tenis 1</h4>
+            <div class="rating">
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star-empty"></span>
+             
+            </div>
+            <p>$50,00</p>
+        </div>
+        <div class="col-4">
+            <a href="produtos-detalhes.html"><img src="img/categoria2.jpg"></a>
+            <h4>tenis 2</h4>
+            <div class="rating">
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star-empty"></span>
+             <span class="glyphicon glyphicon-star-empty"></span>
+             
+            </div>
+            <p>$50,00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/categoria3.jpg">
+            <h4>tenis 3</h4>
+            <div class="rating">
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star-empty"></span>
+             <span class="glyphicon glyphicon-star-empty"></span>
+             
+            </div>
+            <p>$50,00</p>
+        </div>
+        <div class="col-4">
+            <img src="img/categoria1.png">
+            <h4>tenis 4</h4>
+            <div class="rating">
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star"></span>
+             <span class="glyphicon glyphicon-star-empty"></span>
+            </div>
+            <p>$50,00</p>
+    </div>
+</div>
+<h2 class="title">Produtos Mais Recentes</h2>
+<div class="row">
+    <div class="col-4">
+        <img src="img/categoria1.png">
+        <h4>tenis 1</h4>
+        <div class="rating">
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         
+        </div>
+        <p>$50,00</p>
+    </div>
+    <div class="col-4">
+        <img src="img/categoria2.jpg">
+        <h4>tenis 2</h4>
+        <div class="rating">
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         
+        </div>
+        <p>$50,00</p>
+    </div>
+    <div class="col-4">
+        <img src="img/categoria3.jpg">
+        <h4>tenis 3</h4>
+        <div class="rating">
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         
+        </div>
+        <p>$50,00</p>
+    </div>
+    <div class="col-4">
+        <img src="img/categoria1.png">
+        <h4>tenis 4</h4>
+        <div class="rating">
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+        </div>
+        <p>$50,00</p>
+</div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <img src="img/categoria1.png">
+        <h4>tenis 1</h4>
+        <div class="rating">
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         
+        </div>
+        <p>$50,00</p>
+    </div>
+    <div class="col-4">
+        <img src="img/categoria2.jpg">
+        <h4>tenis 2</h4>
+        <div class="rating">
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         
+        </div>
+        <p>$50,00</p>
+    </div>
+    <div class="col-4">
+        <img src="img/categoria3.jpg">
+        <h4>tenis 3</h4>
+        <div class="rating">
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+         
+        </div>
+        <p>$50,00</p>
+    </div>
+    <div class="col-4">
+        <img src="img/categoria1.png">
+        <h4>tenis 4</h4>
+        <div class="rating">
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star"></span>
+         <span class="glyphicon glyphicon-star-empty"></span>
+        </div>
+        <p>$50,00</p>
+  </div>
+ </div>
+</div>
+            <!-- oferecer -->
+
+            <div class="offer">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="img/categoria1.png" class="offer-img">
+                        </div>
+                        <div class="col-2">
+                            <p>exclusivamente disponível na tyrash</p>
+                            <h1>tenis 01</h1>
+                            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit.</small><br>
+                            <a href="" class="btn">Comprar Agora &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- depoimento -->
+
+            <div class="testimonial">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="glyphicon glyphicon-quote-left"></span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.officia deserunt dolores dolore, 
+                            sint maiores eligendi! Eaque, similique.</p>
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                            <img src="img/user1.png">
+                            <h3>Tygola tyghds</h3>
+                        </div>
+                        <div class="col-3">
+                            <span class="glyphicon glyphicon-quote-left"></span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.officia deserunt dolores dolore, 
+                            sint maiores eligendi! Eaque, similique.</p>
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                            <img src="img/user2.png">
+                            <h3>elisa maria abakik</h3>
+                        </div>
+                        <div class="col-3">
+                            <span class="glyphicon glyphicon-quote-left"></span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.officia deserunt dolores dolore, 
+                            sint maiores eligendi! Eaque, similique.</p>
+                            <div class="rating">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </div>
+                            <img src="img/user3.png">
+                            <h3>abakuki starni</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marcas -->
+
+            <div class="brands">
+                <div class="small-container">
+                    <div class="row">
+                        <div class="col-5">
+                            <img src="img/nike.png">
+                        </div>
+                        <div class="col-5">
+                            <img src="img/adi.png">
+                        </div>
+                        <div class="col-5">
+                            <img src="img/puma.png">
+                        </div>
+                        <div class="col-5">
+                            <img src="img/dc.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row-3">
+                        
+                        <div class="footer-col-2">
+                           <img src="img/logo.png" alt="">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                            
+                        <div class="footer-col-3">
+                            <h3>Acesse os links</h3>
+                            <ul>
+                                <li>cupons</li>
+                                <li>postagem do blog</li>
+                                <li>política de devolução</li>
+                                <li>Junte-se a um afiliado</li>  
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Siga-nos</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>Youtube</li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copyright">Copyright tyrash</p>
+                </div>
+            </div>
+
+
+            <!-- js para o menu -->
+
+        <script>
+            var menuItens = document.getElementById("menuItens");
+
+            menuItens.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if( menuItens.style.maxHeight == "0px")
+                {
+                    menuItens.style.maxHeight = "200px";
+                }
+                else
+                {
+                    menuItens.style.maxHeight = "0px";
+                }
+            }
+        </script>
+  
+</body>
+</html>
