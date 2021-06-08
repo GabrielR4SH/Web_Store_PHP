@@ -35,7 +35,47 @@ class Database{
 
         //1-ligar, 2-comunicar, 3-fechar
 
+    //CRUD
 
+    public function select($sql, $parametros = null){
+
+        // executar pesquisas de SQL
+        $this->ligar();
+
+
+        $resultados = null;
+
+
+            try{
+
+                // comunicação com BD
+
+                if(!empty($parametros)){
+                    $executar = $this->ligacao->prepare($sql);  
+                    $executar->execute($parametros);
+
+                    $resultados = $executar->fetchAll(PDO::FETCH_CLASS);
+                } else{
+
+                    $executar = $this->ligacao->prepare($sql);  
+                    $executar->execute();
+                    $resultados = $executar->fetchAll(PDO::FETCH_CLASS);
+
+                }
+
+            } catch(PDOException $e){
+
+                //caso exista erro
+                return false;
+            }
+
+        //desligar do BD
+        $this->desligar();
+
+
+        return $resultados;
+    }
+ }
 
 }
 
