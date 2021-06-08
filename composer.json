@@ -1,0 +1,16 @@
+{
+    "name": "user/loja_de_tenis",
+    "authors": [
+        {
+            "name": "Gabriel Santana",
+            "email": "59832080+GabrielR4SH@users.noreply.github.com"
+        }
+    ],
+
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "core\\" : "core/"
+        }
+    }
+}
