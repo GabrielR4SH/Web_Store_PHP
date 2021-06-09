@@ -71,7 +71,7 @@ class Database{
 
         //desligar do BD
         $this->desligar();
-
+3
 
         return $resultados;
     }
